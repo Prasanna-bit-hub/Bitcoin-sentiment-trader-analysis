@@ -1,12 +1,18 @@
 # Bitcoin Market Sentiment vs Trader Performance Analysis
 
+**Author:** Prasanna B  
+**Assignment:** Data Analytics Internship Assignment  
+**Company:** PrimeTrade.ai
+
+---
+
 ## Project Overview
 
 This project analyzes the relationship between Bitcoin market sentiment and trader performance using the Bitcoin Fear & Greed Index and Hyperliquid historical trading data.
 
 The objective is to understand how different market sentiment conditions influence trading profitability, win rates, position sizing behavior, trading activity, and asset-level performance.
 
-The analysis combines sentiment data with over **211,000 trading records** and uncovers actionable insights that can support sentiment-aware trading strategies.
+The analysis combines Bitcoin market sentiment data with **211,224 historical trading records** to identify relationships between market psychology and trading performance.
 
 ---
 
@@ -34,7 +40,7 @@ The dataset contains:
 - Closed PnL
 - Trade Timestamps
 
-Total Records Analyzed: **211,224**
+**Total Records Analyzed:** 211,224
 
 ---
 
@@ -43,7 +49,7 @@ Total Records Analyzed: **211,224**
 ### Data Preparation
 
 - Loaded Bitcoin Fear & Greed Index data
-- Loaded Hyperliquid trading data
+- Loaded Hyperliquid historical trading data
 - Converted timestamps into a common date format
 - Merged datasets using trade date
 
@@ -87,12 +93,19 @@ Since more than 50% of trades reported zero realized PnL, a secondary analysis w
 
 ### Trading Behavior Changes With Sentiment
 
-- Sell-side activity increased during Greed and Extreme Greed
+- Sell-side activity increased during Greed and Extreme Greed conditions
 - Larger capital deployment occurred during Fear periods
+
+### Profitability Was Concentrated Among A Small Number Of Assets
+
+- A relatively small subset of instruments generated a disproportionate share of total realized profits
+- Asset selection appeared to play a significant role in overall trading performance
+- High-performing assets consistently contributed the majority of cumulative profitability
 
 ### Zero-PnL Trades Represented 50.57% Of The Dataset
 
-A validation analysis using only realized-profit trades confirmed that the primary findings remained consistent.
+- More than half of all trades reported zero realized profit or loss
+- A validation analysis using only realized-profit trades confirmed that the primary findings remained consistent
 
 ---
 
@@ -115,21 +128,21 @@ The project includes 10 analytical visualizations:
 
 ## Business Recommendations
 
-- Incorporate market sentiment indicators into trading strategies.
-- Monitor Extreme Greed conditions for momentum-driven opportunities.
-- Utilize Fear periods for accumulation and capital deployment.
-- Apply stronger risk management during Extreme Fear conditions.
-- Focus on high-performing assets that consistently generate profitability.
-- Evaluate trading performance using realized-profit metrics.
+- Incorporate market sentiment indicators into trading strategies
+- Monitor Extreme Greed conditions for momentum-driven opportunities
+- Utilize Fear periods for accumulation and capital deployment
+- Apply stronger risk management during Extreme Fear conditions
+- Focus on consistently profitable assets and trading opportunities
+- Evaluate trading performance using realized-profit metrics rather than simple averages
 
 ---
 
 ## Limitations
 
-- The analysis identifies correlation rather than causation.
-- Trader-specific characteristics were not analyzed separately.
-- External market variables such as volatility and macroeconomic events were not included.
-- Historical performance does not guarantee future results.
+- The analysis identifies correlation rather than causation
+- Trader-specific characteristics were not analyzed separately
+- External market variables such as volatility and macroeconomic events were not included
+- Historical performance does not guarantee future results
 
 ---
 
@@ -143,18 +156,28 @@ The project includes 10 analytical visualizations:
 - Jupyter Notebook
 
 ---
+
 ## Executive Summary Dashboard
 
-![Executive Summary Heatmap](outputs/chart_10_executive_summary_heatmap.png)
+### Executive Summary Heatmap
+
+  ![Executive Summary Heatmap](outputs/chart_10_executive_summary_heatmap.png)
+*(Insert Executive Summary Heatmap image here)*
+
+---
 
 ## Analysis Notebook
 
-The complete analysis, visualizations, and findings are available in:
+The complete analysis, visualizations, methodology, and findings are available in:
 
-- notebooks/analysis.ipynb
+```text
+notebooks/analysis.ipynb
+```
+
+---
 
 ## Author
 
 **Prasanna B**
 
-Data Analysis Internship Assignment – PrimeTrade.ai
+Data Analytics Internship Assignment – PrimeTrade.ai
