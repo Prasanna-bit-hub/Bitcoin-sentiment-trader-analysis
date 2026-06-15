@@ -147,6 +147,12 @@ The project includes 10 analytical visualizations:
 
 ![Executive Summary Heatmap](outputs/chart_10_executive_summary_heatmap.png)
 
+## Analysis Notebook
+
+The complete analysis, visualizations, and findings are available in:
+
+- notebooks/analysis.ipynb
+
 ## Author
 
 **Prasanna B**
