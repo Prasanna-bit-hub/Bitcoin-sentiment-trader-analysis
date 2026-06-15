@@ -162,7 +162,7 @@ The project includes 10 analytical visualizations:
 ### Executive Summary Heatmap
 
   ![Executive Summary Heatmap](outputs/chart_10_executive_summary_heatmap.png)
-*(Insert Executive Summary Heatmap image here)*
+
 
 ---
 
